@@ -17,5 +17,6 @@
   </dependencies>
   <build>
     <finalName>webappdemo</finalName>
+	<defaultGoal>compile</defaultGoal>
   </build>
 </project>
