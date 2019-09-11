@@ -7,6 +7,9 @@
   <version>1.0</version>
   <name>webappdemo Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -16,20 +19,20 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>webappdemo</finalName>
-	<defaultGoal>compile</defaultGoal>
-	<plugins>
+    <defaultGoal>compile</defaultGoal>
+      <finalName>webappdemo</finalName>
+     <plugins>
 	<plugin>
-        <groupId>org.codehaus.mojo</groupId>        
-        <artifactId>findbugs-maven-plugin</artifactId>        
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
         <version>3.0.1</version>
-        <configuration>        
-     
-           <findbugsXmlOutput>true</findbugsXmlOutput>        
-           <findbugsXmlWithMessages>true</findbugsXmlWithMessages>        
-           <xmlOutput>true</xmlOutput>        
-        </configuration>        
+        <configuration>
+           <findbugsXmlOutput>true</findbugsXmlOutput>
+           <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+           <xmlOutput>true</xmlOutput>
+        </configuration>
        </plugin>
    </plugins>
-  </build>
+ </build>
+
 </project>
